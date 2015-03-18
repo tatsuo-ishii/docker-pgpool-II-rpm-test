@@ -35,7 +35,6 @@ else
 fi
 
 echo "======= Start docker build ======="
-cp ../lib/rpmtest.sh .
 if [ $proxy_set = "y" ];then
     cp Dockerfile Dockerfile.orig
     cat Dockerfile|sed "/ENV/ aENV http_proxy $proxy" > Dockerfile.proxy
