@@ -4,7 +4,9 @@ FROM centos:centos7
 
 MAINTAINER Tatsuo Ishii <ishii@sraoss.co.jp>
 
-RUN yum install -y deltarpm
+ENV DUMMY dummy
+
+RUN yum install -y deltarpm wget
 RUN yum update -y
 ADD rpmtest.sh /tmp/
 CMD /tmp/rpmtest.sh
