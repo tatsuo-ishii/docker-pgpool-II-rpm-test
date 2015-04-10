@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-# Main driver to generate rpms
+# Main driver to test rpms
 # $0: [-p proxy_address]
 # if "-p" is specifed, proxy setting used.
 #
@@ -13,9 +13,9 @@ myvol=$HOME/volum
 image=pgpool2_test_rpm_centos6
 
 # pgpool-II versions
-export pgpool_II_versions="3.4.1 3.3.5"
+export pgpool_II_versions="3.4.2 3.3.6"
 # rpm versons (corresponding to pgpool-II versions)
-export rpm_versions=(3 3)
+export rpm_versions=(1 1)
 
 # PostgreSQL version
 postgresql_versions="92 93 94"
